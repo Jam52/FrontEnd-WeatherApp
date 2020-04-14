@@ -1,5 +1,5 @@
 // Setup empty JS object to act as endpoint for all routes
-const projectData = [];
+const projectData = {};
 //require json country data
 const countries = require('./countries');
 
@@ -40,12 +40,13 @@ app.get('/all', callBack);
 
 // Callback function to complete GET '/all'
 function callBack(req, res) {
-    res.send(projectData[projectData.length -1]);
-    console.log(projectData[projectData.length -1]);
+    res.send(projectData);
 }
 // Post Route
 app.post('/all', (req,res) => {
-    projectData.push(req.body);
+    projectData.temp = req.body.temp;
+    projectData.date = req.body.date;
+    projectData.content = req.body.content;
 })
 
 app.get('/countries', (req,res) => {
