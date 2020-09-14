@@ -1,10 +1,15 @@
-# Weather-Journal App Project
+# Udacity - Web Developer NanoDegree - Project 2\_\_Landing Page
 
-## Overview
-This project requires you to create an asynchronous web app that uses Web API and user data to dynamically update the UI. 
+Part of [Udacity]() Front End Web Development course.
+A simple single page application that takes a zipcode and some text, calls an api using the zip code and updates the page with a temperature and the inputed text.
 
-## Instructions
-This will require modifying the `server.js` file and the `website/app.js` file. You can see `index.html` for element references, and once you are finished with the project steps, you can use `style.css` to style your application to customized perfection.
+This project was an introduction to the node enviorment, RESTful APIs, and Routing.
 
-## Extras
-If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+### Technology Covered
+
+- HTML
+- CSS
+- JavaScript
+- Node.js
+- Express
+- HTTP Requests

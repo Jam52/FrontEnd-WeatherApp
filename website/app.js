@@ -16,7 +16,7 @@ let newDate = months[d.getMonth()] +'.'+ d.getDate() +'.'+ d.getFullYear();
 
 async function createData() {
     const uiData = {};
-    const location = document.getElementById('zip').value.replace(/\s/g, '').toLowerCase();
+    const location = '40504';
     const buildUrl = `http://api.openweathermap.org/data/2.5/weather?q=${location},us&appid=${apiKey}&units=imperial`;
     const data = await fetch(buildUrl);
     const jsonData = await data.json();
